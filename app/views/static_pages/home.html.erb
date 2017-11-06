@@ -1,6 +1,21 @@
-    <h1>Sample App</h1>
-    <p>
-      This is the home page for the
-      <a href="http://www.railstutorial.org/">Ruby on Rails Tutorial</a>
-      sample application.
-    </p>
+
+<style >
+body{
+  background-image: url(https://images.unsplash.com/photo-1468465226960-8899e992537c?auto=format&fit=crop&w=1506&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D);
+  background-position: bottom;
+}
+</style>
+
+<div class="center jumbotron">
+  <h1>Bienvenue sur Mon Premier Site en Ruby on Rails</h1>
+
+  <h2>
+    Mon Premier Site en Ruby on Rails fait par
+    <a href="https://www.facebook.com/christian.adou1?ref=bookmarks">Christian Merari</a>
+  </h2>
+
+  <%= link_to "Contactez moi ", contact_path, class: "btn btn-lg btn-primary" %>
+</div>
+
+<%= link_to image_tag("rails.png", alt: "Rails logo"),
+            'http://rubyonrails.org/' %>
